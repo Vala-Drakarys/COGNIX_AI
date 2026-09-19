@@ -1,0 +1,603 @@
+{
+  "subject": "Mathematics",
+  "topic": "Partial Derivatives",
+  "case_count": 200,
+  "dimensions": {
+    "concept": 10,
+    "constant": 20,
+    "basic": 30,
+    "zero": 10,
+    "sum": 10,
+    "application": 10,
+    "second": 5,
+    "mixed": 9,
+    "product": 8,
+    "transfer": 8,
+    "complex": 8,
+    "explain": 8,
+    "compare": 4,
+    "notation": 4,
+    "word": 4,
+    "error": 4,
+    "evaluation": 16,
+    "chain": 16,
+    "log": 8,
+    "trig": 8
+  },
+  "hypotheses": [
+    {
+      "id": "MATH_H1",
+      "diagnosis": "concept misunderstanding",
+      "dimensions": [
+        "concept"
+      ],
+      "case_ids": [
+        "MATH_0001",
+        "MATH_0002",
+        "MATH_0046",
+        "MATH_0047",
+        "MATH_0091",
+        "MATH_0092",
+        "MATH_0136",
+        "MATH_0137",
+        "MATH_0181",
+        "MATH_0182"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0001",
+          "question": "What does \u2202f/\u2202x mean for f(x,y)?",
+          "expected_answer": "The rate of change of f with respect to x while y is held constant.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "MATH_0002",
+          "question": "What does \u2202f/\u2202y mean for f(x,y)?",
+          "expected_answer": "The rate of change of f with respect to y while x is held constant.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "MATH_0046",
+          "question": "Diagnostic check: What does \u2202f/\u2202x mean for f(x,y)?",
+          "expected_answer": "The rate of change of f with respect to x while y is held constant.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "MATH_0047",
+          "question": "Transfer check: What does \u2202f/\u2202y mean for f(x,y)?",
+          "expected_answer": "The rate of change of f with respect to y while x is held constant.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "MATH_0091",
+          "question": "Diagnostic check: What does \u2202f/\u2202x mean for f(x,y)?",
+          "expected_answer": "The rate of change of f with respect to x while y is held constant.",
+          "dimension": "concept"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H3",
+      "diagnosis": "failure to hold other variables constant",
+      "dimensions": [
+        "constant",
+        "error",
+        "product",
+        "zero"
+      ],
+      "case_ids": [
+        "MATH_0003",
+        "MATH_0004",
+        "MATH_0005",
+        "MATH_0006",
+        "MATH_0013",
+        "MATH_0014",
+        "MATH_0022",
+        "MATH_0023",
+        "MATH_0033",
+        "MATH_0048",
+        "MATH_0049",
+        "MATH_0050",
+        "MATH_0051",
+        "MATH_0058",
+        "MATH_0059",
+        "MATH_0067",
+        "MATH_0068",
+        "MATH_0078",
+        "MATH_0093",
+        "MATH_0094",
+        "MATH_0095",
+        "MATH_0096",
+        "MATH_0103",
+        "MATH_0104",
+        "MATH_0112",
+        "MATH_0113",
+        "MATH_0123",
+        "MATH_0138",
+        "MATH_0139",
+        "MATH_0140",
+        "MATH_0141",
+        "MATH_0148",
+        "MATH_0149",
+        "MATH_0157",
+        "MATH_0158",
+        "MATH_0168",
+        "MATH_0183",
+        "MATH_0184",
+        "MATH_0185",
+        "MATH_0186",
+        "MATH_0193",
+        "MATH_0194"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0003",
+          "question": "Find \u2202/\u2202x (x\u00b2y).",
+          "expected_answer": "2xy",
+          "dimension": "constant"
+        },
+        {
+          "case_id": "MATH_0004",
+          "question": "Find \u2202/\u2202y (x\u00b2y).",
+          "expected_answer": "x\u00b2",
+          "dimension": "constant"
+        },
+        {
+          "case_id": "MATH_0005",
+          "question": "Find \u2202/\u2202x (xy\u00b2).",
+          "expected_answer": "y\u00b2",
+          "dimension": "constant"
+        },
+        {
+          "case_id": "MATH_0006",
+          "question": "Find \u2202/\u2202y (xy\u00b2).",
+          "expected_answer": "2xy",
+          "dimension": "constant"
+        },
+        {
+          "case_id": "MATH_0013",
+          "question": "Find \u2202/\u2202x (y\u00b3).",
+          "expected_answer": "0",
+          "dimension": "zero"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H4",
+      "diagnosis": "basic differentiation weakness",
+      "dimensions": [
+        "basic",
+        "sum"
+      ],
+      "case_ids": [
+        "MATH_0007",
+        "MATH_0008",
+        "MATH_0009",
+        "MATH_0010",
+        "MATH_0011",
+        "MATH_0012",
+        "MATH_0015",
+        "MATH_0016",
+        "MATH_0052",
+        "MATH_0053",
+        "MATH_0054",
+        "MATH_0055",
+        "MATH_0056",
+        "MATH_0057",
+        "MATH_0060",
+        "MATH_0061",
+        "MATH_0097",
+        "MATH_0098",
+        "MATH_0099",
+        "MATH_0100",
+        "MATH_0101",
+        "MATH_0102",
+        "MATH_0105",
+        "MATH_0106",
+        "MATH_0142",
+        "MATH_0143",
+        "MATH_0144",
+        "MATH_0145",
+        "MATH_0146",
+        "MATH_0147",
+        "MATH_0150",
+        "MATH_0151",
+        "MATH_0187",
+        "MATH_0188",
+        "MATH_0189",
+        "MATH_0190",
+        "MATH_0191",
+        "MATH_0192",
+        "MATH_0195",
+        "MATH_0196"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0007",
+          "question": "Find \u2202/\u2202x (3x\u00b3 + 2y).",
+          "expected_answer": "9x\u00b2",
+          "dimension": "basic"
+        },
+        {
+          "case_id": "MATH_0008",
+          "question": "Find \u2202/\u2202y (3x\u00b3 + 2y).",
+          "expected_answer": "2",
+          "dimension": "basic"
+        },
+        {
+          "case_id": "MATH_0009",
+          "question": "Find \u2202/\u2202x (5x\u00b2 + 7y + 4).",
+          "expected_answer": "10x",
+          "dimension": "basic"
+        },
+        {
+          "case_id": "MATH_0010",
+          "question": "Find \u2202/\u2202y (5x\u00b2 + 7y + 4).",
+          "expected_answer": "7",
+          "dimension": "basic"
+        },
+        {
+          "case_id": "MATH_0011",
+          "question": "Find \u2202/\u2202x (7x + 4y + 9).",
+          "expected_answer": "7",
+          "dimension": "basic"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H6",
+      "diagnosis": "application/transfer gap",
+      "dimensions": [
+        "application",
+        "chain",
+        "log",
+        "mixed",
+        "second",
+        "transfer",
+        "trig"
+      ],
+      "case_ids": [
+        "MATH_0017",
+        "MATH_0018",
+        "MATH_0019",
+        "MATH_0020",
+        "MATH_0021",
+        "MATH_0024",
+        "MATH_0025",
+        "MATH_0038",
+        "MATH_0039",
+        "MATH_0040",
+        "MATH_0041",
+        "MATH_0042",
+        "MATH_0043",
+        "MATH_0044",
+        "MATH_0045",
+        "MATH_0062",
+        "MATH_0063",
+        "MATH_0064",
+        "MATH_0065",
+        "MATH_0066",
+        "MATH_0069",
+        "MATH_0070",
+        "MATH_0083",
+        "MATH_0084",
+        "MATH_0085",
+        "MATH_0086",
+        "MATH_0087",
+        "MATH_0088",
+        "MATH_0089",
+        "MATH_0090",
+        "MATH_0107",
+        "MATH_0108",
+        "MATH_0109",
+        "MATH_0110",
+        "MATH_0111",
+        "MATH_0114",
+        "MATH_0115",
+        "MATH_0128",
+        "MATH_0129",
+        "MATH_0130",
+        "MATH_0131",
+        "MATH_0132",
+        "MATH_0133",
+        "MATH_0134",
+        "MATH_0135",
+        "MATH_0152",
+        "MATH_0153",
+        "MATH_0154",
+        "MATH_0155",
+        "MATH_0156",
+        "MATH_0159",
+        "MATH_0160",
+        "MATH_0173",
+        "MATH_0174",
+        "MATH_0175",
+        "MATH_0176",
+        "MATH_0177",
+        "MATH_0178",
+        "MATH_0179",
+        "MATH_0180",
+        "MATH_0197",
+        "MATH_0198",
+        "MATH_0199",
+        "MATH_0200"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0017",
+          "question": "If \u2202f/\u2202x is positive at a point, what does that mean locally?",
+          "expected_answer": "Increasing x slightly while holding other variables fixed tends to increase f locally.",
+          "dimension": "application"
+        },
+        {
+          "case_id": "MATH_0018",
+          "question": "If \u2202f/\u2202x is zero at a point, what does that tell you?",
+          "expected_answer": "The local first-order rate of change with respect to x is zero at that point.",
+          "dimension": "application"
+        },
+        {
+          "case_id": "MATH_0019",
+          "question": "For f=x\u00b2y, find \u2202\u00b2f/\u2202x\u00b2.",
+          "expected_answer": "2y",
+          "dimension": "second"
+        },
+        {
+          "case_id": "MATH_0020",
+          "question": "For f=x\u00b2y\u00b3, find \u2202\u00b2f/\u2202y\u2202x.",
+          "expected_answer": "6xy\u00b2",
+          "dimension": "mixed"
+        },
+        {
+          "case_id": "MATH_0021",
+          "question": "For f=xy\u00b2, find \u2202\u00b2f/\u2202x\u2202y.",
+          "expected_answer": "2y",
+          "dimension": "mixed"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H9",
+      "diagnosis": "multi-step organization problem",
+      "dimensions": [
+        "complex"
+      ],
+      "case_ids": [
+        "MATH_0026",
+        "MATH_0027",
+        "MATH_0071",
+        "MATH_0072",
+        "MATH_0116",
+        "MATH_0117",
+        "MATH_0161",
+        "MATH_0162"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0026",
+          "question": "Find \u2202/\u2202x (4x\u00b2y + 3xy\u00b2 + y\u00b3).",
+          "expected_answer": "8xy + 3y\u00b2",
+          "dimension": "complex"
+        },
+        {
+          "case_id": "MATH_0027",
+          "question": "Find \u2202/\u2202y (4x\u00b2y + 3xy\u00b2 + y\u00b3).",
+          "expected_answer": "4x\u00b2 + 6xy + 3y\u00b2",
+          "dimension": "complex"
+        },
+        {
+          "case_id": "MATH_0071",
+          "question": "Diagnostic check: Find \u2202/\u2202x (4x\u00b2y + 3xy\u00b2 + y\u00b3).",
+          "expected_answer": "8xy + 3y\u00b2",
+          "dimension": "complex"
+        },
+        {
+          "case_id": "MATH_0072",
+          "question": "Transfer check: Find \u2202/\u2202y (4x\u00b2y + 3xy\u00b2 + y\u00b3).",
+          "expected_answer": "4x\u00b2 + 6xy + 3y\u00b2",
+          "dimension": "complex"
+        },
+        {
+          "case_id": "MATH_0116",
+          "question": "Diagnostic check: Find \u2202/\u2202x (4x\u00b2y + 3xy\u00b2 + y\u00b3).",
+          "expected_answer": "8xy + 3y\u00b2",
+          "dimension": "complex"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H10",
+      "diagnosis": "self-explanation gap",
+      "dimensions": [
+        "explain"
+      ],
+      "case_ids": [
+        "MATH_0028",
+        "MATH_0029",
+        "MATH_0073",
+        "MATH_0074",
+        "MATH_0118",
+        "MATH_0119",
+        "MATH_0163",
+        "MATH_0164"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0028",
+          "question": "Why is \u2202/\u2202x(y\u00b2)=0?",
+          "expected_answer": "Because y is treated as constant with respect to x.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "MATH_0029",
+          "question": "Why is \u2202/\u2202y(x\u00b2)=0?",
+          "expected_answer": "Because x is treated as constant with respect to y.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "MATH_0073",
+          "question": "Retrieval check: Why is \u2202/\u2202x(y\u00b2)=0?",
+          "expected_answer": "Because y is treated as constant with respect to x.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "MATH_0074",
+          "question": "Error-analysis check: Why is \u2202/\u2202y(x\u00b2)=0?",
+          "expected_answer": "Because x is treated as constant with respect to y.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "MATH_0118",
+          "question": "Retrieval check: Why is \u2202/\u2202x(y\u00b2)=0?",
+          "expected_answer": "Because y is treated as constant with respect to x.",
+          "dimension": "explain"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H2",
+      "diagnosis": "variable-selection confusion",
+      "dimensions": [
+        "compare"
+      ],
+      "case_ids": [
+        "MATH_0030",
+        "MATH_0075",
+        "MATH_0120",
+        "MATH_0165"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0030",
+          "question": "For f=xy, what are \u2202f/\u2202x and \u2202f/\u2202y?",
+          "expected_answer": "\u2202f/\u2202x=y and \u2202f/\u2202y=x.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "MATH_0075",
+          "question": "Self-explanation check: For f=xy, what are \u2202f/\u2202x and \u2202f/\u2202y?",
+          "expected_answer": "\u2202f/\u2202x=y and \u2202f/\u2202y=x.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "MATH_0120",
+          "question": "Self-explanation check: For f=xy, what are \u2202f/\u2202x and \u2202f/\u2202y?",
+          "expected_answer": "\u2202f/\u2202x=y and \u2202f/\u2202y=x.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "MATH_0165",
+          "question": "Self-explanation check: For f=xy, what are \u2202f/\u2202x and \u2202f/\u2202y?",
+          "expected_answer": "\u2202f/\u2202x=y and \u2202f/\u2202y=x.",
+          "dimension": "compare"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H7",
+      "diagnosis": "notation or interpretation gap",
+      "dimensions": [
+        "notation",
+        "word"
+      ],
+      "case_ids": [
+        "MATH_0031",
+        "MATH_0032",
+        "MATH_0076",
+        "MATH_0077",
+        "MATH_0121",
+        "MATH_0122",
+        "MATH_0166",
+        "MATH_0167"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0031",
+          "question": "Why is \u2202 used instead of d for a multivariable function?",
+          "expected_answer": "It indicates differentiation with respect to one variable while other independent variables are held constant.",
+          "dimension": "notation"
+        },
+        {
+          "case_id": "MATH_0032",
+          "question": "A quantity depends on x and y. What does changing x while holding y fixed represent?",
+          "expected_answer": "The local rate of change with respect to x.",
+          "dimension": "word"
+        },
+        {
+          "case_id": "MATH_0076",
+          "question": "Diagnostic check: Why is \u2202 used instead of d for a multivariable function?",
+          "expected_answer": "It indicates differentiation with respect to one variable while other independent variables are held constant.",
+          "dimension": "notation"
+        },
+        {
+          "case_id": "MATH_0077",
+          "question": "Transfer check: A quantity depends on x and y. What does changing x while holding y fixed represent?",
+          "expected_answer": "The local rate of change with respect to x.",
+          "dimension": "word"
+        },
+        {
+          "case_id": "MATH_0121",
+          "question": "Diagnostic check: Why is \u2202 used instead of d for a multivariable function?",
+          "expected_answer": "It indicates differentiation with respect to one variable while other independent variables are held constant.",
+          "dimension": "notation"
+        }
+      ]
+    },
+    {
+      "id": "MATH_H5",
+      "diagnosis": "substitution/calculation error",
+      "dimensions": [
+        "evaluation"
+      ],
+      "case_ids": [
+        "MATH_0034",
+        "MATH_0035",
+        "MATH_0036",
+        "MATH_0037",
+        "MATH_0079",
+        "MATH_0080",
+        "MATH_0081",
+        "MATH_0082",
+        "MATH_0124",
+        "MATH_0125",
+        "MATH_0126",
+        "MATH_0127",
+        "MATH_0169",
+        "MATH_0170",
+        "MATH_0171",
+        "MATH_0172"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "MATH_0034",
+          "question": "For f=x\u00b2+xy+y\u00b2, find \u2202f/\u2202x at (2,3).",
+          "expected_answer": "7",
+          "dimension": "evaluation"
+        },
+        {
+          "case_id": "MATH_0035",
+          "question": "For f=x\u00b2+xy+y\u00b2, find \u2202f/\u2202y at (2,3).",
+          "expected_answer": "8",
+          "dimension": "evaluation"
+        },
+        {
+          "case_id": "MATH_0036",
+          "question": "For f=3x\u00b2y, find \u2202f/\u2202x at (2,4).",
+          "expected_answer": "48",
+          "dimension": "evaluation"
+        },
+        {
+          "case_id": "MATH_0037",
+          "question": "For f=3x\u00b2y, find \u2202f/\u2202y at (2,4).",
+          "expected_answer": "12",
+          "dimension": "evaluation"
+        },
+        {
+          "case_id": "MATH_0079",
+          "question": "Error-analysis check: For f=x\u00b2+xy+y\u00b2, find \u2202f/\u2202x at (2,3).",
+          "expected_answer": "7",
+          "dimension": "evaluation"
+        }
+      ]
+    }
+  ]
+}

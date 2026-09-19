@@ -1,0 +1,26 @@
+{
+  "studentId": "STUDENT_001",
+  "subject": "Mathematics",
+  "topic": "Partial Derivatives",
+  "currentHypotheses": [
+    {
+      "id": "MATH_H3",
+      "status": "supported",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "MATH_0002",
+        "MATH_0009"
+      ],
+      "lastUpdated": "2026-09-19T00:00:00Z"
+    }
+  ],
+  "testedCaseIds": [
+    "MATH_0001",
+    "MATH_0002",
+    "MATH_0009"
+  ],
+  "currentDiagnosis": "failure to hold other variables constant",
+  "learnerConfirmation": "pending",
+  "nextDiagnosticDimension": "application",
+  "attemptCount": 3
+}

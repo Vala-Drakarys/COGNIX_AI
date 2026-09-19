@@ -1,0 +1,649 @@
+{
+  "subject": "Physics",
+  "topic": "Elasticity",
+  "case_count": 200,
+  "dimensions": {
+    "concept": 15,
+    "stress": 10,
+    "strain": 10,
+    "young": 10,
+    "bulk": 5,
+    "shear": 5,
+    "compare": 18,
+    "calc": 15,
+    "conversion": 10,
+    "application": 5,
+    "word": 5,
+    "error": 10,
+    "meaning": 10,
+    "classification": 15,
+    "units": 10,
+    "transfer": 10,
+    "graph": 9,
+    "explain": 8,
+    "reasoning": 16,
+    "stop": 4
+  },
+  "hypotheses": [
+    {
+      "id": "PHYS_H1",
+      "diagnosis": "elasticity concept gap",
+      "dimensions": [
+        "concept"
+      ],
+      "case_ids": [
+        "PHYS_0001",
+        "PHYS_0002",
+        "PHYS_0003",
+        "PHYS_0043",
+        "PHYS_0044",
+        "PHYS_0045",
+        "PHYS_0085",
+        "PHYS_0086",
+        "PHYS_0087",
+        "PHYS_0127",
+        "PHYS_0128",
+        "PHYS_0129",
+        "PHYS_0169",
+        "PHYS_0170",
+        "PHYS_0171"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0001",
+          "question": "What is elasticity?",
+          "expected_answer": "The ability of a material to regain its original shape and size after a deforming force is removed, within its elastic limit.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "PHYS_0002",
+          "question": "What is plastic deformation?",
+          "expected_answer": "Permanent deformation that remains after the deforming force is removed.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "PHYS_0003",
+          "question": "What is the elastic limit?",
+          "expected_answer": "The limit up to which a material can return to its original state after removal of the load.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "PHYS_0043",
+          "question": "Retrieval check: What is elasticity?",
+          "expected_answer": "The ability of a material to regain its original shape and size after a deforming force is removed, within its elastic limit.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "PHYS_0044",
+          "question": "Error-analysis check: What is plastic deformation?",
+          "expected_answer": "Permanent deformation that remains after the deforming force is removed.",
+          "dimension": "concept"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H2",
+      "diagnosis": "stress concept gap",
+      "dimensions": [
+        "stress"
+      ],
+      "case_ids": [
+        "PHYS_0004",
+        "PHYS_0005",
+        "PHYS_0046",
+        "PHYS_0047",
+        "PHYS_0088",
+        "PHYS_0089",
+        "PHYS_0130",
+        "PHYS_0131",
+        "PHYS_0172",
+        "PHYS_0173"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0004",
+          "question": "What is tensile stress?",
+          "expected_answer": "Tensile force divided by cross-sectional area: \u03c3=F/A.",
+          "dimension": "stress"
+        },
+        {
+          "case_id": "PHYS_0005",
+          "question": "Why does area appear in the definition of stress?",
+          "expected_answer": "Stress represents force distributed over a cross-sectional area.",
+          "dimension": "stress"
+        },
+        {
+          "case_id": "PHYS_0046",
+          "question": "Diagnostic check: What is tensile stress?",
+          "expected_answer": "Tensile force divided by cross-sectional area: \u03c3=F/A.",
+          "dimension": "stress"
+        },
+        {
+          "case_id": "PHYS_0047",
+          "question": "Transfer check: Why does area appear in the definition of stress?",
+          "expected_answer": "Stress represents force distributed over a cross-sectional area.",
+          "dimension": "stress"
+        },
+        {
+          "case_id": "PHYS_0088",
+          "question": "Retrieval check: What is tensile stress?",
+          "expected_answer": "Tensile force divided by cross-sectional area: \u03c3=F/A.",
+          "dimension": "stress"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H3",
+      "diagnosis": "strain concept gap",
+      "dimensions": [
+        "strain"
+      ],
+      "case_ids": [
+        "PHYS_0006",
+        "PHYS_0007",
+        "PHYS_0048",
+        "PHYS_0049",
+        "PHYS_0090",
+        "PHYS_0091",
+        "PHYS_0132",
+        "PHYS_0133",
+        "PHYS_0174",
+        "PHYS_0175"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0006",
+          "question": "What is longitudinal strain?",
+          "expected_answer": "Change in length divided by original length: \u03b5=\u0394L/L.",
+          "dimension": "strain"
+        },
+        {
+          "case_id": "PHYS_0007",
+          "question": "Why is longitudinal strain dimensionless?",
+          "expected_answer": "It is a ratio of two lengths, so the units cancel.",
+          "dimension": "strain"
+        },
+        {
+          "case_id": "PHYS_0048",
+          "question": "Retrieval check: What is longitudinal strain?",
+          "expected_answer": "Change in length divided by original length: \u03b5=\u0394L/L.",
+          "dimension": "strain"
+        },
+        {
+          "case_id": "PHYS_0049",
+          "question": "Error-analysis check: Why is longitudinal strain dimensionless?",
+          "expected_answer": "It is a ratio of two lengths, so the units cancel.",
+          "dimension": "strain"
+        },
+        {
+          "case_id": "PHYS_0090",
+          "question": "Self-explanation check: What is longitudinal strain?",
+          "expected_answer": "Change in length divided by original length: \u03b5=\u0394L/L.",
+          "dimension": "strain"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H4",
+      "diagnosis": "formula retrieval problem",
+      "dimensions": [
+        "young"
+      ],
+      "case_ids": [
+        "PHYS_0008",
+        "PHYS_0009",
+        "PHYS_0050",
+        "PHYS_0051",
+        "PHYS_0092",
+        "PHYS_0093",
+        "PHYS_0134",
+        "PHYS_0135",
+        "PHYS_0176",
+        "PHYS_0177"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0008",
+          "question": "State Young's modulus in terms of stress and strain.",
+          "expected_answer": "Young's modulus = longitudinal stress / longitudinal strain.",
+          "dimension": "young"
+        },
+        {
+          "case_id": "PHYS_0009",
+          "question": "What is the SI unit of Young's modulus?",
+          "expected_answer": "Pascal (Pa), equivalent to N/m\u00b2.",
+          "dimension": "young"
+        },
+        {
+          "case_id": "PHYS_0050",
+          "question": "Self-explanation check: State Young's modulus in terms of stress and strain.",
+          "expected_answer": "Young's modulus = longitudinal stress / longitudinal strain.",
+          "dimension": "young"
+        },
+        {
+          "case_id": "PHYS_0051",
+          "question": "Diagnostic check: What is the SI unit of Young's modulus?",
+          "expected_answer": "Pascal (Pa), equivalent to N/m\u00b2.",
+          "dimension": "young"
+        },
+        {
+          "case_id": "PHYS_0092",
+          "question": "Transfer check: State Young's modulus in terms of stress and strain.",
+          "expected_answer": "Young's modulus = longitudinal stress / longitudinal strain.",
+          "dimension": "young"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H6",
+      "diagnosis": "modulus-selection problem",
+      "dimensions": [
+        "bulk",
+        "classification",
+        "shear"
+      ],
+      "case_ids": [
+        "PHYS_0010",
+        "PHYS_0011",
+        "PHYS_0025",
+        "PHYS_0026",
+        "PHYS_0027",
+        "PHYS_0052",
+        "PHYS_0053",
+        "PHYS_0067",
+        "PHYS_0068",
+        "PHYS_0069",
+        "PHYS_0094",
+        "PHYS_0095",
+        "PHYS_0109",
+        "PHYS_0110",
+        "PHYS_0111",
+        "PHYS_0136",
+        "PHYS_0137",
+        "PHYS_0151",
+        "PHYS_0152",
+        "PHYS_0153",
+        "PHYS_0178",
+        "PHYS_0179",
+        "PHYS_0193",
+        "PHYS_0194",
+        "PHYS_0195"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0010",
+          "question": "Which modulus describes resistance to uniform change in volume?",
+          "expected_answer": "Bulk modulus.",
+          "dimension": "bulk"
+        },
+        {
+          "case_id": "PHYS_0011",
+          "question": "Which modulus relates shear stress to shear strain?",
+          "expected_answer": "Shear modulus or modulus of rigidity.",
+          "dimension": "shear"
+        },
+        {
+          "case_id": "PHYS_0025",
+          "question": "Which modulus is associated with longitudinal deformation?",
+          "expected_answer": "Young's modulus.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "PHYS_0026",
+          "question": "Which modulus is associated with volume change?",
+          "expected_answer": "Bulk modulus.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "PHYS_0027",
+          "question": "Which modulus is associated with shear deformation?",
+          "expected_answer": "Shear modulus.",
+          "dimension": "classification"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H9",
+      "diagnosis": "physical-meaning gap",
+      "dimensions": [
+        "compare",
+        "explain",
+        "meaning"
+      ],
+      "case_ids": [
+        "PHYS_0012",
+        "PHYS_0013",
+        "PHYS_0023",
+        "PHYS_0024",
+        "PHYS_0034",
+        "PHYS_0035",
+        "PHYS_0036",
+        "PHYS_0037",
+        "PHYS_0054",
+        "PHYS_0055",
+        "PHYS_0065",
+        "PHYS_0066",
+        "PHYS_0076",
+        "PHYS_0077",
+        "PHYS_0078",
+        "PHYS_0079",
+        "PHYS_0096",
+        "PHYS_0097",
+        "PHYS_0107",
+        "PHYS_0108",
+        "PHYS_0118",
+        "PHYS_0119",
+        "PHYS_0120",
+        "PHYS_0121",
+        "PHYS_0138",
+        "PHYS_0139",
+        "PHYS_0149",
+        "PHYS_0150",
+        "PHYS_0160",
+        "PHYS_0161",
+        "PHYS_0162",
+        "PHYS_0163",
+        "PHYS_0180",
+        "PHYS_0181",
+        "PHYS_0191",
+        "PHYS_0192"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0012",
+          "question": "For the same stress, what does a larger Young's modulus generally indicate?",
+          "expected_answer": "Smaller strain and greater stiffness in the elastic range.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "PHYS_0013",
+          "question": "If two materials have the same Young's modulus and one experiences greater stress, what happens to its strain in the linear elastic range?",
+          "expected_answer": "Its strain is greater in proportion to the stress.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "PHYS_0023",
+          "question": "What does a large Young's modulus mean physically?",
+          "expected_answer": "The material is relatively stiff and requires greater stress for a given elastic strain.",
+          "dimension": "meaning"
+        },
+        {
+          "case_id": "PHYS_0024",
+          "question": "Does a larger Young's modulus mean a material stretches more for the same stress?",
+          "expected_answer": "No. For the same stress, a larger Young's modulus means less strain.",
+          "dimension": "meaning"
+        },
+        {
+          "case_id": "PHYS_0034",
+          "question": "Explain why stress is not simply the same thing as force.",
+          "expected_answer": "Stress normalizes force by area, so it describes force per unit area.",
+          "dimension": "explain"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H8",
+      "diagnosis": "calculation/process error",
+      "dimensions": [
+        "calc",
+        "error"
+      ],
+      "case_ids": [
+        "PHYS_0014",
+        "PHYS_0015",
+        "PHYS_0016",
+        "PHYS_0021",
+        "PHYS_0022",
+        "PHYS_0056",
+        "PHYS_0057",
+        "PHYS_0058",
+        "PHYS_0063",
+        "PHYS_0064",
+        "PHYS_0098",
+        "PHYS_0099",
+        "PHYS_0100",
+        "PHYS_0105",
+        "PHYS_0106",
+        "PHYS_0140",
+        "PHYS_0141",
+        "PHYS_0142",
+        "PHYS_0147",
+        "PHYS_0148",
+        "PHYS_0182",
+        "PHYS_0183",
+        "PHYS_0184",
+        "PHYS_0189",
+        "PHYS_0190"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0014",
+          "question": "A force of 100 N acts over an area of 0.01 m\u00b2. Find tensile stress.",
+          "expected_answer": "10,000 Pa.",
+          "dimension": "calc"
+        },
+        {
+          "case_id": "PHYS_0015",
+          "question": "A wire of length 2 m extends by 1 mm. Find its longitudinal strain.",
+          "expected_answer": "0.0005.",
+          "dimension": "calc"
+        },
+        {
+          "case_id": "PHYS_0016",
+          "question": "A wire has stress 2\u00d710^8 Pa and strain 0.001. Find Young's modulus.",
+          "expected_answer": "2\u00d710^11 Pa.",
+          "dimension": "calc"
+        },
+        {
+          "case_id": "PHYS_0021",
+          "question": "A student reports stress in newtons. What is the likely issue?",
+          "expected_answer": "They may have stopped at force instead of dividing force by area.",
+          "dimension": "error"
+        },
+        {
+          "case_id": "PHYS_0022",
+          "question": "A student uses final length instead of original length in longitudinal strain. What is wrong?",
+          "expected_answer": "The standard longitudinal strain definition uses change in length divided by original length.",
+          "dimension": "error"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H5",
+      "diagnosis": "unit/dimensional confusion",
+      "dimensions": [
+        "conversion",
+        "units"
+      ],
+      "case_ids": [
+        "PHYS_0017",
+        "PHYS_0018",
+        "PHYS_0028",
+        "PHYS_0029",
+        "PHYS_0059",
+        "PHYS_0060",
+        "PHYS_0070",
+        "PHYS_0071",
+        "PHYS_0101",
+        "PHYS_0102",
+        "PHYS_0112",
+        "PHYS_0113",
+        "PHYS_0143",
+        "PHYS_0144",
+        "PHYS_0154",
+        "PHYS_0155",
+        "PHYS_0185",
+        "PHYS_0186",
+        "PHYS_0196",
+        "PHYS_0197"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0017",
+          "question": "Convert 1 cm\u00b2 to m\u00b2.",
+          "expected_answer": "1\u00d710^-4 m\u00b2.",
+          "dimension": "conversion"
+        },
+        {
+          "case_id": "PHYS_0018",
+          "question": "Convert 2 mm to metres.",
+          "expected_answer": "0.002 m.",
+          "dimension": "conversion"
+        },
+        {
+          "case_id": "PHYS_0028",
+          "question": "What units result from force divided by area?",
+          "expected_answer": "N/m\u00b2 or Pa.",
+          "dimension": "units"
+        },
+        {
+          "case_id": "PHYS_0029",
+          "question": "What are the units of strain?",
+          "expected_answer": "No units; strain is dimensionless.",
+          "dimension": "units"
+        },
+        {
+          "case_id": "PHYS_0059",
+          "question": "Error-analysis check: Convert 1 cm\u00b2 to m\u00b2.",
+          "expected_answer": "1\u00d710^-4 m\u00b2.",
+          "dimension": "conversion"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H7",
+      "diagnosis": "physical-to-equation translation gap",
+      "dimensions": [
+        "application",
+        "word"
+      ],
+      "case_ids": [
+        "PHYS_0019",
+        "PHYS_0020",
+        "PHYS_0061",
+        "PHYS_0062",
+        "PHYS_0103",
+        "PHYS_0104",
+        "PHYS_0145",
+        "PHYS_0146",
+        "PHYS_0187",
+        "PHYS_0188"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0019",
+          "question": "A stretched wire has known force, area, original length, and extension. What sequence finds Young's modulus?",
+          "expected_answer": "Find stress F/A, find strain \u0394L/L, then divide stress by strain.",
+          "dimension": "application"
+        },
+        {
+          "case_id": "PHYS_0020",
+          "question": "Why can two wires under the same force experience different stresses?",
+          "expected_answer": "If their cross-sectional areas differ, their stresses differ because stress is force divided by area.",
+          "dimension": "word"
+        },
+        {
+          "case_id": "PHYS_0061",
+          "question": "Diagnostic check: A stretched wire has known force, area, original length, and extension. What sequence finds Young's modulus?",
+          "expected_answer": "Find stress F/A, find strain \u0394L/L, then divide stress by strain.",
+          "dimension": "application"
+        },
+        {
+          "case_id": "PHYS_0062",
+          "question": "Transfer check: Why can two wires under the same force experience different stresses?",
+          "expected_answer": "If their cross-sectional areas differ, their stresses differ because stress is force divided by area.",
+          "dimension": "word"
+        },
+        {
+          "case_id": "PHYS_0103",
+          "question": "Retrieval check: A stretched wire has known force, area, original length, and extension. What sequence finds Young's modulus?",
+          "expected_answer": "Find stress F/A, find strain \u0394L/L, then divide stress by strain.",
+          "dimension": "application"
+        }
+      ]
+    },
+    {
+      "id": "PHYS_H10",
+      "diagnosis": "transfer/application gap",
+      "dimensions": [
+        "graph",
+        "reasoning",
+        "stop",
+        "transfer"
+      ],
+      "case_ids": [
+        "PHYS_0030",
+        "PHYS_0031",
+        "PHYS_0032",
+        "PHYS_0033",
+        "PHYS_0038",
+        "PHYS_0039",
+        "PHYS_0040",
+        "PHYS_0041",
+        "PHYS_0042",
+        "PHYS_0072",
+        "PHYS_0073",
+        "PHYS_0074",
+        "PHYS_0075",
+        "PHYS_0080",
+        "PHYS_0081",
+        "PHYS_0082",
+        "PHYS_0083",
+        "PHYS_0084",
+        "PHYS_0114",
+        "PHYS_0115",
+        "PHYS_0116",
+        "PHYS_0117",
+        "PHYS_0122",
+        "PHYS_0123",
+        "PHYS_0124",
+        "PHYS_0125",
+        "PHYS_0126",
+        "PHYS_0156",
+        "PHYS_0157",
+        "PHYS_0158",
+        "PHYS_0159",
+        "PHYS_0164",
+        "PHYS_0165",
+        "PHYS_0166",
+        "PHYS_0167",
+        "PHYS_0168",
+        "PHYS_0198",
+        "PHYS_0199",
+        "PHYS_0200"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "PHYS_0030",
+          "question": "A new problem describes twisting-like deformation. Which modulus should you consider?",
+          "expected_answer": "Shear modulus, if the deformation is shear.",
+          "dimension": "transfer"
+        },
+        {
+          "case_id": "PHYS_0031",
+          "question": "A new problem describes uniform compression of a material. Which modulus should you consider?",
+          "expected_answer": "Bulk modulus.",
+          "dimension": "transfer"
+        },
+        {
+          "case_id": "PHYS_0032",
+          "question": "In the linear elastic region of a stress-strain graph, what does the slope represent for a tensile test?",
+          "expected_answer": "Young's modulus.",
+          "dimension": "graph"
+        },
+        {
+          "case_id": "PHYS_0033",
+          "question": "What does leaving the elastic range imply about deformation?",
+          "expected_answer": "Permanent deformation may occur.",
+          "dimension": "graph"
+        },
+        {
+          "case_id": "PHYS_0038",
+          "question": "If the cross-sectional area doubles while force stays fixed, what happens to tensile stress?",
+          "expected_answer": "It is halved.",
+          "dimension": "reasoning"
+        }
+      ]
+    }
+  ]
+}

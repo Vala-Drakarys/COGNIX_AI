@@ -1,0 +1,1 @@
+This integration contains backend LLM/agent logic only. The LLM project frontend was intentionally not included.
