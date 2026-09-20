@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cognix — AI Learning Companion" />
+  <title>Cognix — AI Learning Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand">
+          <div class="monkey-logo" aria-label="Cognix logo">
+            <svg viewBox="0 0 90 90" role="img" aria-hidden="true">
+              <path d="M27 68c-9-7-13-18-10-29 3-12 13-20 25-21 11-1 22 5 27 15 5 10 3 22-4 30-4 5-10 8-16 9" />
+              <path d="M38 25c-1-9 5-15 13-15 6 0 11 4 12 10" />
+              <path d="M53 22c7 1 12 6 12 13 0 6-4 11-10 13" />
+              <path d="M31 44c3-6 8-9 15-9 7 0 13 4 16 10" />
+              <path d="M45 36c1 5 1 9 0 14" />
+              <path d="M38 54c4 3 9 3 14 0" />
+              <path d="M32 65c4 2 8 3 13 3" />
+              <path d="M51 65c5-2 9-5 12-9" />
+              <path d="M23 48c-7 0-11-5-11-11 0-5 3-9 8-11" />
+              <path d="M67 46c7 2 11 7 10 13-1 6-5 9-11 10" />
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">Cognix</div>
+            <div class="brand-subtitle">Your AI Learning Companion</div>
+          </div>
+        </div>
+        <button class="icon-btn collapse-btn" id="sidebarToggle" title="Collapse sidebar" aria-label="Collapse sidebar">
+          <span>‹</span>
+        </button>
+      </div>
+
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-page="study-plans"><span class="nav-icon">▣</span><span>Study Plans</span></button>
+        <button class="nav-item" data-page="notes"><span class="nav-icon">▤</span><span>Notes</span></button>
+        <button class="nav-item" data-page="progress"><span class="nav-icon">▥</span><span>Progress</span></button>
+      </nav>
+
+      <button class="streak-card" id="streakCard" title="View your study streak">
+        <div class="streak-icon">🔥</div>
+        <div class="streak-content">
+          <strong><span id="streakCount">3</span> Day Streak</strong>
+          <span>Keep going, future you will thank you!</span>
+          <div class="streak-dots" aria-hidden="true">
+            <i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <span class="streak-arrow">›</span>
+      </button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div></div>
+        <div class="top-actions">
+          <button class="icon-btn theme-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">☼</button>
+          <button class="profile-btn" id="profileBtn" aria-expanded="false">
+            <span class="avatar">●</span>
+            <span>Hello, Student</span>
+            <span class="chevron">⌄</span>
+          </button>
+          <div class="profile-menu hidden" id="profileMenu">
+            <button data-action="profile">Profile</button>
+            <button data-action="settings">Settings</button>
+            <button data-action="logout">Log out</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="page home-page" id="homePage">
+        <div class="welcome">
+          <h1>Hi there,<br><span>how can I help you today?</span></h1>
+        </div>
+
+        <div class="chat-area" id="chatArea" aria-live="polite">
+          <div class="empty-state" id="emptyState">
+            <div class="empty-orbit"></div>
+          </div>
+        </div>
+
+        <div class="composer-wrap">
+          <form class="composer" id="chatForm">
+            <input type="file" id="fileInput" hidden multiple />
+            <button type="button" class="composer-icon" id="attachBtn" title="Attach file" aria-label="Attach file">⌕</button>
+            <input id="messageInput" autocomplete="off" placeholder="Type your question or topic..." aria-label="Message" />
+            <button type="submit" class="send-btn" id="sendBtn" title="Send message" aria-label="Send message">›</button>
+          </form>
+          <div class="attachment-list" id="attachmentList"></div>
+          <div class="typing" id="typingIndicator">Cognix is thinking<span>.</span><span>.</span><span>.</span></div>
+        </div>
+      </section>
+
+      <section class="page hidden-page" id="study-plansPage">
+        <div class="content-card">
+          <p class="eyebrow">STUDY PLANS</p>
+          <h2>Build a study plan around your goals.</h2>
+          <p>Create, save and review study schedules. Connect this page to your planner backend through the API functions in <code>script.js</code>.</p>
+          <button class="primary-btn" data-action="create-plan">Create study plan</button>
+        </div>
+      </section>
+
+      <section class="page hidden-page" id="notesPage">
+        <div class="content-card">
+          <p class="eyebrow">NOTES</p>
+          <h2>Your learning notes.</h2>
+          <textarea id="notesEditor" placeholder="Write or paste notes here..."></textarea>
+          <button class="primary-btn" id="saveNotes">Save notes</button>
+          <span class="save-status" id="notesStatus"></span>
+        </div>
+      </section>
+
+      <section class="page hidden-page" id="progressPage">
+        <div class="content-card">
+          <p class="eyebrow">PROGRESS</p>
+          <h2>Your learning progress.</h2>
+          <div class="progress-grid">
+            <div class="stat-card"><span>Current streak</span><strong><span id="progressStreak">3</span> days</strong></div>
+            <div class="stat-card"><span>Questions asked</span><strong id="questionCount">0</strong></div>
+            <div class="stat-card"><span>Study time</span><strong id="studyTime">0 min</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+  <div class="modal hidden" id="streakModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">×</button>
+      <div class="big-flame">🔥</div>
+      <h2><span id="modalStreak">3</span> day streak</h2>
+      <p>Study today to keep your Cognix streak alive.</p>
+      <button class="primary-btn" id="modalStart">Start studying</button>
+    </div>
+  </div>
+
+  <script src="cognix-bridge.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
