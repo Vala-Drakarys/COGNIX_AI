@@ -1,0 +1,639 @@
+{
+  "subject": "Chemistry",
+  "topic": "Biomolecules",
+  "case_count": 200,
+  "dimensions": {
+    "concept": 5,
+    "classification": 25,
+    "building": 15,
+    "carbohydrate": 10,
+    "protein": 15,
+    "function": 20,
+    "compare": 15,
+    "transfer": 15,
+    "application": 10,
+    "error": 15,
+    "retention": 15,
+    "structure": 12,
+    "explain": 12,
+    "word": 4,
+    "diagnosis": 12
+  },
+  "hypotheses": [
+    {
+      "id": "CHEM_H1",
+      "diagnosis": "basic biomolecule concept gap",
+      "dimensions": [
+        "concept"
+      ],
+      "case_ids": [
+        "CHEM_0001",
+        "CHEM_0043",
+        "CHEM_0085",
+        "CHEM_0127",
+        "CHEM_0169"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0001",
+          "question": "What are biomolecules?",
+          "expected_answer": "Molecules associated with living organisms that are important for biological structure and function.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "CHEM_0043",
+          "question": "Retrieval check: What are biomolecules?",
+          "expected_answer": "Molecules associated with living organisms that are important for biological structure and function.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "CHEM_0085",
+          "question": "Self-explanation check: What are biomolecules?",
+          "expected_answer": "Molecules associated with living organisms that are important for biological structure and function.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "CHEM_0127",
+          "question": "Transfer check: What are biomolecules?",
+          "expected_answer": "Molecules associated with living organisms that are important for biological structure and function.",
+          "dimension": "concept"
+        },
+        {
+          "case_id": "CHEM_0169",
+          "question": "Error-analysis check: What are biomolecules?",
+          "expected_answer": "Molecules associated with living organisms that are important for biological structure and function.",
+          "dimension": "concept"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H2",
+      "diagnosis": "classification problem",
+      "dimensions": [
+        "classification"
+      ],
+      "case_ids": [
+        "CHEM_0002",
+        "CHEM_0003",
+        "CHEM_0004",
+        "CHEM_0031",
+        "CHEM_0032",
+        "CHEM_0044",
+        "CHEM_0045",
+        "CHEM_0046",
+        "CHEM_0073",
+        "CHEM_0074",
+        "CHEM_0086",
+        "CHEM_0087",
+        "CHEM_0088",
+        "CHEM_0115",
+        "CHEM_0116",
+        "CHEM_0128",
+        "CHEM_0129",
+        "CHEM_0130",
+        "CHEM_0157",
+        "CHEM_0158",
+        "CHEM_0170",
+        "CHEM_0171",
+        "CHEM_0172",
+        "CHEM_0199",
+        "CHEM_0200"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0002",
+          "question": "Which biomolecule class does glucose belong to?",
+          "expected_answer": "Carbohydrate.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "CHEM_0003",
+          "question": "Which biomolecule class includes starch?",
+          "expected_answer": "Carbohydrate.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "CHEM_0004",
+          "question": "Which biomolecule class includes proteins?",
+          "expected_answer": "Proteins are a major biomolecule class.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "CHEM_0031",
+          "question": "A molecule has repeated amino-acid units. Which feature is most useful for classification?",
+          "expected_answer": "Its amino-acid polymer structure indicates a polypeptide/protein.",
+          "dimension": "classification"
+        },
+        {
+          "case_id": "CHEM_0032",
+          "question": "A molecule contains nucleotide units. Which class does that suggest?",
+          "expected_answer": "Nucleic acid.",
+          "dimension": "classification"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H3",
+      "diagnosis": "building-block recall problem",
+      "dimensions": [
+        "building",
+        "error"
+      ],
+      "case_ids": [
+        "CHEM_0005",
+        "CHEM_0006",
+        "CHEM_0007",
+        "CHEM_0025",
+        "CHEM_0026",
+        "CHEM_0027",
+        "CHEM_0047",
+        "CHEM_0048",
+        "CHEM_0049",
+        "CHEM_0067",
+        "CHEM_0068",
+        "CHEM_0069",
+        "CHEM_0089",
+        "CHEM_0090",
+        "CHEM_0091",
+        "CHEM_0109",
+        "CHEM_0110",
+        "CHEM_0111",
+        "CHEM_0131",
+        "CHEM_0132",
+        "CHEM_0133",
+        "CHEM_0151",
+        "CHEM_0152",
+        "CHEM_0153",
+        "CHEM_0173",
+        "CHEM_0174",
+        "CHEM_0175",
+        "CHEM_0193",
+        "CHEM_0194",
+        "CHEM_0195"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0005",
+          "question": "What are the basic building blocks of proteins?",
+          "expected_answer": "Amino acids.",
+          "dimension": "building"
+        },
+        {
+          "case_id": "CHEM_0006",
+          "question": "What are nucleic acids built from?",
+          "expected_answer": "Nucleotides.",
+          "dimension": "building"
+        },
+        {
+          "case_id": "CHEM_0007",
+          "question": "What are the components of a nucleotide?",
+          "expected_answer": "A nitrogenous base, a pentose sugar, and a phosphate group.",
+          "dimension": "building"
+        },
+        {
+          "case_id": "CHEM_0025",
+          "question": "A student calls nucleotides the monomers of proteins. What is wrong?",
+          "expected_answer": "Nucleotides are building blocks of nucleic acids; amino acids are building blocks of proteins.",
+          "dimension": "error"
+        },
+        {
+          "case_id": "CHEM_0026",
+          "question": "A student says all carbohydrates are single sugars. What is wrong?",
+          "expected_answer": "Carbohydrates include monosaccharides as well as larger oligosaccharides and polysaccharides.",
+          "dimension": "error"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H4",
+      "diagnosis": "structure/formation gap",
+      "dimensions": [
+        "carbohydrate",
+        "protein",
+        "structure"
+      ],
+      "case_ids": [
+        "CHEM_0008",
+        "CHEM_0009",
+        "CHEM_0010",
+        "CHEM_0011",
+        "CHEM_0012",
+        "CHEM_0033",
+        "CHEM_0034",
+        "CHEM_0035",
+        "CHEM_0050",
+        "CHEM_0051",
+        "CHEM_0052",
+        "CHEM_0053",
+        "CHEM_0054",
+        "CHEM_0075",
+        "CHEM_0076",
+        "CHEM_0077",
+        "CHEM_0092",
+        "CHEM_0093",
+        "CHEM_0094",
+        "CHEM_0095",
+        "CHEM_0096",
+        "CHEM_0117",
+        "CHEM_0118",
+        "CHEM_0119",
+        "CHEM_0134",
+        "CHEM_0135",
+        "CHEM_0136",
+        "CHEM_0137",
+        "CHEM_0138",
+        "CHEM_0159",
+        "CHEM_0160",
+        "CHEM_0161",
+        "CHEM_0176",
+        "CHEM_0177",
+        "CHEM_0178",
+        "CHEM_0179",
+        "CHEM_0180"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0008",
+          "question": "How does a polysaccharide differ from a monosaccharide?",
+          "expected_answer": "A polysaccharide contains many monosaccharide units, whereas a monosaccharide is a single simple sugar unit.",
+          "dimension": "carbohydrate"
+        },
+        {
+          "case_id": "CHEM_0009",
+          "question": "Why are glucose and starch both carbohydrates?",
+          "expected_answer": "They belong to the carbohydrate class; starch is a polysaccharide made from glucose units.",
+          "dimension": "carbohydrate"
+        },
+        {
+          "case_id": "CHEM_0010",
+          "question": "What is the relationship between amino acids and proteins?",
+          "expected_answer": "Amino acids are linked into polypeptide chains that form proteins.",
+          "dimension": "protein"
+        },
+        {
+          "case_id": "CHEM_0011",
+          "question": "What bond links amino acids in a polypeptide?",
+          "expected_answer": "A peptide bond.",
+          "dimension": "protein"
+        },
+        {
+          "case_id": "CHEM_0012",
+          "question": "Why can protein structure affect protein function?",
+          "expected_answer": "Three-dimensional structure influences molecular interactions and therefore function.",
+          "dimension": "protein"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H5",
+      "diagnosis": "function/role recall problem",
+      "dimensions": [
+        "function"
+      ],
+      "case_ids": [
+        "CHEM_0013",
+        "CHEM_0014",
+        "CHEM_0015",
+        "CHEM_0016",
+        "CHEM_0055",
+        "CHEM_0056",
+        "CHEM_0057",
+        "CHEM_0058",
+        "CHEM_0097",
+        "CHEM_0098",
+        "CHEM_0099",
+        "CHEM_0100",
+        "CHEM_0139",
+        "CHEM_0140",
+        "CHEM_0141",
+        "CHEM_0142",
+        "CHEM_0181",
+        "CHEM_0182",
+        "CHEM_0183",
+        "CHEM_0184"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0013",
+          "question": "Give one major role of proteins.",
+          "expected_answer": "Examples include catalysis, transport, structure, regulation, and signaling.",
+          "dimension": "function"
+        },
+        {
+          "case_id": "CHEM_0014",
+          "question": "What is a broad role of DNA?",
+          "expected_answer": "DNA stores hereditary/genetic information.",
+          "dimension": "function"
+        },
+        {
+          "case_id": "CHEM_0015",
+          "question": "Give one broad role of lipids.",
+          "expected_answer": "Energy storage, membrane structure, or signaling are examples.",
+          "dimension": "function"
+        },
+        {
+          "case_id": "CHEM_0016",
+          "question": "Give one broad role of carbohydrates.",
+          "expected_answer": "Energy supply/storage or structural roles are examples.",
+          "dimension": "function"
+        },
+        {
+          "case_id": "CHEM_0055",
+          "question": "Self-explanation check: Give one major role of proteins.",
+          "expected_answer": "Examples include catalysis, transport, structure, regulation, and signaling.",
+          "dimension": "function"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H6",
+      "diagnosis": "cross-class comparison gap",
+      "dimensions": [
+        "compare"
+      ],
+      "case_ids": [
+        "CHEM_0017",
+        "CHEM_0018",
+        "CHEM_0019",
+        "CHEM_0059",
+        "CHEM_0060",
+        "CHEM_0061",
+        "CHEM_0101",
+        "CHEM_0102",
+        "CHEM_0103",
+        "CHEM_0143",
+        "CHEM_0144",
+        "CHEM_0145",
+        "CHEM_0185",
+        "CHEM_0186",
+        "CHEM_0187"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0017",
+          "question": "Give one difference between proteins and carbohydrates.",
+          "expected_answer": "Proteins are built from amino acids; carbohydrates include sugars and polysaccharides and have different structures and roles.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "CHEM_0018",
+          "question": "How are DNA and proteins different in broad role?",
+          "expected_answer": "DNA stores genetic information, while proteins perform many structural, catalytic, transport, regulatory, and other functions.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "CHEM_0019",
+          "question": "How are nucleotides and amino acids different?",
+          "expected_answer": "Nucleotides are building blocks of nucleic acids; amino acids are building blocks of proteins.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "CHEM_0059",
+          "question": "Error-analysis check: Give one difference between proteins and carbohydrates.",
+          "expected_answer": "Proteins are built from amino acids; carbohydrates include sugars and polysaccharides and have different structures and roles.",
+          "dimension": "compare"
+        },
+        {
+          "case_id": "CHEM_0060",
+          "question": "Self-explanation check: How are DNA and proteins different in broad role?",
+          "expected_answer": "DNA stores genetic information, while proteins perform many structural, catalytic, transport, regulatory, and other functions.",
+          "dimension": "compare"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H7",
+      "diagnosis": "structure-function/transfer gap",
+      "dimensions": [
+        "application",
+        "transfer"
+      ],
+      "case_ids": [
+        "CHEM_0020",
+        "CHEM_0021",
+        "CHEM_0022",
+        "CHEM_0023",
+        "CHEM_0024",
+        "CHEM_0062",
+        "CHEM_0063",
+        "CHEM_0064",
+        "CHEM_0065",
+        "CHEM_0066",
+        "CHEM_0104",
+        "CHEM_0105",
+        "CHEM_0106",
+        "CHEM_0107",
+        "CHEM_0108",
+        "CHEM_0146",
+        "CHEM_0147",
+        "CHEM_0148",
+        "CHEM_0149",
+        "CHEM_0150",
+        "CHEM_0188",
+        "CHEM_0189",
+        "CHEM_0190",
+        "CHEM_0191",
+        "CHEM_0192"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0020",
+          "question": "A molecule is described as a chain of amino acids. What is it likely to be?",
+          "expected_answer": "A polypeptide/protein.",
+          "dimension": "transfer"
+        },
+        {
+          "case_id": "CHEM_0021",
+          "question": "A molecule is described as a polymer of nucleotides. What class is it likely to belong to?",
+          "expected_answer": "A nucleic acid.",
+          "dimension": "transfer"
+        },
+        {
+          "case_id": "CHEM_0022",
+          "question": "A molecule is described as many linked sugar units. What broad class is likely?",
+          "expected_answer": "A carbohydrate, specifically a polysaccharide if the units are monosaccharides.",
+          "dimension": "transfer"
+        },
+        {
+          "case_id": "CHEM_0023",
+          "question": "If a protein's shape changes substantially, why might its function change?",
+          "expected_answer": "Its altered structure can change the interactions needed for its function.",
+          "dimension": "application"
+        },
+        {
+          "case_id": "CHEM_0024",
+          "question": "If a learner can name amino acids but cannot explain peptide-bond formation, what type of gap might this indicate?",
+          "expected_answer": "A structure/formation or concept-connection gap rather than simple name recall.",
+          "dimension": "application"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H8",
+      "diagnosis": "retrieval/retention problem",
+      "dimensions": [
+        "retention"
+      ],
+      "case_ids": [
+        "CHEM_0028",
+        "CHEM_0029",
+        "CHEM_0030",
+        "CHEM_0070",
+        "CHEM_0071",
+        "CHEM_0072",
+        "CHEM_0112",
+        "CHEM_0113",
+        "CHEM_0114",
+        "CHEM_0154",
+        "CHEM_0155",
+        "CHEM_0156",
+        "CHEM_0196",
+        "CHEM_0197",
+        "CHEM_0198"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0028",
+          "question": "Name four major classes of biomolecules.",
+          "expected_answer": "Carbohydrates, proteins, lipids, and nucleic acids.",
+          "dimension": "retention"
+        },
+        {
+          "case_id": "CHEM_0029",
+          "question": "Without notes, match amino acids to their major biomolecule product.",
+          "expected_answer": "Proteins/polypeptides.",
+          "dimension": "retention"
+        },
+        {
+          "case_id": "CHEM_0030",
+          "question": "Without notes, match nucleotides to their major biomolecule product.",
+          "expected_answer": "Nucleic acids.",
+          "dimension": "retention"
+        },
+        {
+          "case_id": "CHEM_0070",
+          "question": "Self-explanation check: Name four major classes of biomolecules.",
+          "expected_answer": "Carbohydrates, proteins, lipids, and nucleic acids.",
+          "dimension": "retention"
+        },
+        {
+          "case_id": "CHEM_0071",
+          "question": "Diagnostic check: Without notes, match amino acids to their major biomolecule product.",
+          "expected_answer": "Proteins/polypeptides.",
+          "dimension": "retention"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H10",
+      "diagnosis": "concept-network gap",
+      "dimensions": [
+        "explain"
+      ],
+      "case_ids": [
+        "CHEM_0036",
+        "CHEM_0037",
+        "CHEM_0038",
+        "CHEM_0078",
+        "CHEM_0079",
+        "CHEM_0080",
+        "CHEM_0120",
+        "CHEM_0121",
+        "CHEM_0122",
+        "CHEM_0162",
+        "CHEM_0163",
+        "CHEM_0164"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0036",
+          "question": "Explain why amino acids are called building blocks of proteins.",
+          "expected_answer": "Proteins are formed from amino acids linked by peptide bonds into polypeptide chains.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "CHEM_0037",
+          "question": "Explain why nucleotides are called building blocks of nucleic acids.",
+          "expected_answer": "Nucleic acids are polymers composed of nucleotide units.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "CHEM_0038",
+          "question": "Explain the connection between protein sequence, structure, and function.",
+          "expected_answer": "Amino-acid sequence influences structure, and structure influences interactions and biological function.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "CHEM_0078",
+          "question": "Retrieval check: Explain why amino acids are called building blocks of proteins.",
+          "expected_answer": "Proteins are formed from amino acids linked by peptide bonds into polypeptide chains.",
+          "dimension": "explain"
+        },
+        {
+          "case_id": "CHEM_0079",
+          "question": "Error-analysis check: Explain why nucleotides are called building blocks of nucleic acids.",
+          "expected_answer": "Nucleic acids are polymers composed of nucleotide units.",
+          "dimension": "explain"
+        }
+      ]
+    },
+    {
+      "id": "CHEM_H9",
+      "diagnosis": "question-interpretation problem",
+      "dimensions": [
+        "diagnosis",
+        "word"
+      ],
+      "case_ids": [
+        "CHEM_0039",
+        "CHEM_0040",
+        "CHEM_0041",
+        "CHEM_0042",
+        "CHEM_0081",
+        "CHEM_0082",
+        "CHEM_0083",
+        "CHEM_0084",
+        "CHEM_0123",
+        "CHEM_0124",
+        "CHEM_0125",
+        "CHEM_0126",
+        "CHEM_0165",
+        "CHEM_0166",
+        "CHEM_0167",
+        "CHEM_0168"
+      ],
+      "representative_checks": [
+        {
+          "case_id": "CHEM_0039",
+          "question": "A question describes a molecule without naming it but gives its building block. What should you do first?",
+          "expected_answer": "Identify the building block and use it as evidence for classification.",
+          "dimension": "word"
+        },
+        {
+          "case_id": "CHEM_0040",
+          "question": "A learner answers recognition questions correctly but fails recall questions. What should be tested next?",
+          "expected_answer": "Delayed free-recall performance, because the issue may be retrieval rather than recognition.",
+          "dimension": "diagnosis"
+        },
+        {
+          "case_id": "CHEM_0041",
+          "question": "A learner can define a protein but cannot explain its function. What hypothesis should be considered?",
+          "expected_answer": "A function or structure-function understanding gap.",
+          "dimension": "diagnosis"
+        },
+        {
+          "case_id": "CHEM_0042",
+          "question": "A learner rejects a memory diagnosis and correctly explains the concept. What should the agent do?",
+          "expected_answer": "Revise the diagnosis and test competing hypotheses rather than forcing the memory diagnosis.",
+          "dimension": "diagnosis"
+        },
+        {
+          "case_id": "CHEM_0081",
+          "question": "Diagnostic check: A question describes a molecule without naming it but gives its building block. What should you do first?",
+          "expected_answer": "Identify the building block and use it as evidence for classification.",
+          "dimension": "word"
+        }
+      ]
+    }
+  ]
+}
